@@ -1,0 +1,23 @@
+{
+  "name": "webserver",
+  "version": "1.0.0",
+  "description": "Primer servidor web con node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vidal-03/backend2024.git"
+  },
+  "keywords": [
+    "webserver",
+    "server"
+  ],
+  "author": "Angel Vidal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vidal-03/backend2024/issues"
+  },
+  "homepage": "https://github.com/Vidal-03/backend2024#readme"
+}
