@@ -1,0 +1,24 @@
+GET http://localhost:3000/usuarios
+
+###
+GET http://localhost:3000/usuarios5
+
+###
+POST http://localhost:3000/usuarios/ 
+content-type: application/json
+
+{
+"nombre": "Angel", 
+"apellidos": "Vidal", 
+"email": "angelvidal03@gmail.com"
+}
+
+###
+PUT http://localhost:3000/usuarios/2
+content-type: application/json
+
+{
+  "nombre": "David", 
+"apellidos": "Vidal", 
+"email": "angelvidal03@gmail.com"  
+}
