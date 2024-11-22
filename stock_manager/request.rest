@@ -1,23 +1,70 @@
+### Muestra los usuarios
 GET http://localhost:3000/users/
-###
+
+### Muestra usuarios por ID
 GET http://localhost:3000/users/1
-###
-GET http://localhost:3000/users/3/
-//done miestra un usuario dependiendo del id q
-###
+
+### Agrega usuario
 POST http://localhost:3000/users/
 Content-Type: application/json
+
 {
-  "name": "david" 
-  //para agregar un usuario
+  "username": "vidal03",
+  "password": "vidal0302",
+  "email": "angelvidal.03@gmail.com"
 }
-###
-PUT http://localhost:3000/users/2
+
+### Actualiza usuario
+PUT http://localhost:3000/users/1
 Content-Type: application/json
+
 {
-  "name": "david" 
-  //para actualizar el usuario
+  "username": "luis david" 
 }
-###
-DELETE http://localhost:3000/users/2/ 
-//para eliminar 
+
+###Elimina usuario
+DELETE http://localhost:3000/users/3
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "vidal03",
+  "password": "vidal0302"
+}
+### Mostrar todos los miembros de staff
+GET http://localhost:3000/staff
+### Mostrar un miembro específico de staff por ID
+GET http://localhost:3000/staff/3
+### Agregar un nuevo miembro a staff
+POST http://localhost:3000/staff
+Content-Type: application/json
+
+{
+  "first_name": "dennis",
+  "last_name": "fernando",
+  "birth_date": "2003-02-03",
+  "gender": "M",
+  "phone_number": "1234567891",
+  "email": "angelvidal.03@gamil.com",
+  "address": "casa amarilla",
+  "is_active": true,
+  "user_id": 4
+}
+### Actualizar un miembro específico de staff
+PUT http://localhost:3000/staff/2
+Content-Type: application/json
+
+{
+  "first_name": "Luis",
+  "last_name": "Cabrera",
+  "birth_date": "2007-07-15",
+  "gender": "M",
+  "phone_number": "1234567892",
+  "email": "luisc.07@gmail.com",
+  "address": "Casa azul",
+  "is_active": true,
+  "user_id": 4
+}
+### Eliminar un miembro específico de staff por ID
+DELETE http://localhost:3000/staff/2
