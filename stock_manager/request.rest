@@ -2,16 +2,16 @@
 GET http://localhost:3000/users/
 
 ### Muestra usuarios por ID
-GET http://localhost:3000/users/1
+GET http://localhost:3000/users/4
 
 ### Agrega usuario
 POST http://localhost:3000/users/
 Content-Type: application/json
 
 {
-  "username": "vidal03",
-  "password": "vidal0302",
-  "email": "angelvidal.03@gmail.com"
+  "username": "Luis",
+  "password": "luis1507",
+  "email": "luisal.07@gmail.com"
 }
 
 ### Actualiza usuario
@@ -19,12 +19,13 @@ PUT http://localhost:3000/users/1
 Content-Type: application/json
 
 {
-  "username": "luis david" 
+  "username": "david" 
 }
 
 ###Elimina usuario
-DELETE http://localhost:3000/users/3
+DELETE http://localhost:3000/users/6
 
+###
 POST http://localhost:3000/users/login
 Content-Type: application/json
 
@@ -41,13 +42,13 @@ POST http://localhost:3000/staff
 Content-Type: application/json
 
 {
-  "first_name": "dennis",
-  "last_name": "fernando",
-  "birth_date": "2003-02-03",
+  "first_name": "Gerardo",
+  "last_name": "Martinez",
+  "birth_date": "2004-07-13",
   "gender": "M",
-  "phone_number": "1234567891",
-  "email": "angelvidal.03@gamil.com",
-  "address": "casa amarilla",
+  "phone_number": "1234544451",
+  "email": "geramartin.13@gamil.com",
+  "address": "casa roja",
   "is_active": true,
   "user_id": 4
 }
@@ -67,4 +68,4 @@ Content-Type: application/json
   "user_id": 4
 }
 ### Eliminar un miembro específico de staff por ID
-DELETE http://localhost:3000/staff/2
+DELETE http://localhost:3000/staff/5
