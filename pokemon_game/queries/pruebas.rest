@@ -15,9 +15,9 @@ Content-Type: application/json
 PUT http://localhost:3000/users/1
 Content-Type: application/json
 {
-    "first_name": "Angel",
-    "last_name": "Vidal",
+    "first_name": "David",
+    "last_name": "Cabrera",
     "email": "vidal03@gmail.com"
 }
 ###
-DELETE http://localhost:3000/users/1
+DELETE http://localhost:3000/users/2

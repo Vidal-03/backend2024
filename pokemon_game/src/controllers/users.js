@@ -44,7 +44,7 @@ const createUser = async (req = request, res = response) => {
     const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
     const newUser = await conn.query(userQueries.addUser, [first_name, last_name, email, hashedPassword]);
     if(newUser.affectedRows === 0) {
-        res.status(500.).send({message: 'Error adding user'});
+        res.status(500).send({message: 'Error adding user'});
         return;
     }
     res.status(201).send({message: 'User created'});
