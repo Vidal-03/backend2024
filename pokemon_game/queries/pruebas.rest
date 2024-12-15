@@ -4,6 +4,7 @@ GET http://localhost:3000/users/1
 ###
 POST http://localhost:3000/users
 Content-Type: application/json
+
 {
     "first_name": "Angel",
     "last_name": "Vidal",
@@ -14,6 +15,7 @@ Content-Type: application/json
 ###
 PUT http://localhost:3000/users/1
 Content-Type: application/json
+
 {
     "first_name": "David",
     "last_name": "Cabrera",
